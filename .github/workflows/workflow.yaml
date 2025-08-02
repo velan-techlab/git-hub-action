@@ -1,0 +1,17 @@
+name: my first github action
+on: push
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Wellcome Message
+          run: echo "Hello GitHub"
+        - name: List files
+          run: ls
+    second-job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Wellcome Message
+          run: echo "Hello GitHub"
+        - name: List files
+          run: ls
