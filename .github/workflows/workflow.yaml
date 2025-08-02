@@ -15,3 +15,14 @@ jobs:
           run: echo "Hello GitHub"
         - name: List files
           run: ls
+    checkout-job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout Repo
+          uses: actions/checkout@v4
+        - name: Wellcome Message
+          run: echo "Hello GitHub"
+        - name: List files
+          run: ls
+        - name: display 
+          run: cat README.md
